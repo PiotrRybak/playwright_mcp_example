@@ -32,7 +32,8 @@ Model Context Protocol (MCP) is a standardized way for AI models to securely acc
 1. Create and activate virtual environment: `python -m venv venv` then `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (macOS/Linux)
 2. Install dependencies: `pip install -r requirements.txt`
 3. **Install Playwright browsers**: `npx playwright install`
-4. Start Ollama server with your preferred model
-5. Run the example: `python main.py`
+4. Start the Playwright MCP server (SSE): `npx @playwright/mcp@latest --port 8931`
+5. Start Ollama server with your preferred model
+6. Run the example: `python main.py`
 
 The agent will navigate to Reddit's LocalLLaMA subreddit and extract the title of the newest post! 
